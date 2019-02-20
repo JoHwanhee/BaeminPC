@@ -23,7 +23,7 @@ public class User {
     }
 
     public UserLevel getLevel() {
-        return null;
+        return this.level;
     }
 
     public void setLevel(UserLevel level) {
