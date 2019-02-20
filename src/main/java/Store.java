@@ -50,7 +50,7 @@ public class Store {
 
 
     public void add(String comment){
-
+        this.comments.add(comment);
     }
 
     public String[] getComments(){
@@ -58,6 +58,10 @@ public class Store {
     }
 
     public double getStarAverage(){
+        if(starCount == 0){
+            return 0;
+        }
+
         evaluate();
         return starAverage;
     }

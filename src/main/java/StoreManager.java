@@ -62,8 +62,8 @@ public class StoreManager {
                     compareTarget2 = o2.getStarAverage();
                     break;
                 case Review:
-                    compareTarget1 = o1.getStarAverage();
-                    compareTarget2 = o2.getStarAverage();
+                    compareTarget1 = o1.getComments().length;
+                    compareTarget2 = o2.getComments().length;
                     break;
                 case Distance:
                     compareTarget1 = o1.getDistance();
